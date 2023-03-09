@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    height:100vh;
+   
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.box {
+    background-color:rgba(0, 0, 0, 0.1);
+    width: 510px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    box-shadow: 20px 20px 20px grey;
+    
+}
+
+.box h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    letter-spacing: 1px;
+    
+}
+
+.take {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.take:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inptss {
+    display: flex;
+    gap: 10px;
+}
+
+.inptss div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#small {
+    font-size: 13px;
+}
+
+#res,
+#input {
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#res:focus,
+#input:focus {
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid rgb(130, 130, 255);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+#buttn {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+}
+
+#buttn:active {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(108, 108, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+#type1,
+#type2 {
+    height: 41px;
+    background-color:rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    width: 200px;
+}
+
+#type1:focus,
+#type2:focus {
+    height: 41px;
+    font-size: 25px;
+    border: 1px solid rgb(130, 130, 255);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+select option{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+label {
+    font-size: 25px;
+    font-family: -webkit-pictograph;
+    color: black;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 575px) {
+    .container {
+        transform: scale(0.95);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .container {
+        transform: scale(0.8);
+    }
+}
